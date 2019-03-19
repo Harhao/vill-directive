@@ -48,7 +48,7 @@ export default {
 | v-clock | 直接添加到html标签| - | -
 | v-time | 任意一个合法时间格式 | String | -
 ### demos
-![demo](https://github.com/Harhao/vill-messgae/blob/master/src/lib/demo.gif)
+![demo](https://github.com/Harhao/vill-directive/blob/master/src/assets/demo.gif)
 ## License
 [MIT](http://opensource.org/licenses/MIT)
 ```
