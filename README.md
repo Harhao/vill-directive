@@ -51,4 +51,3 @@ export default {
 ![demo](https://github.com/Harhao/vill-directive/blob/master/src/assets/demo.gif)
 ## License
 [MIT](http://opensource.org/licenses/MIT)
-```
