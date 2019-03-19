@@ -43,13 +43,10 @@ export default {
 </script>
 <style scoped></style>
 ```
-
-```
-| 字段 | 说明 | 类型 | 默认值
+| 指令选项 | 说明 | 类型 | 默认值
 |----- | ----- | ----- | ----- 
-| type | 可选值 success/error/info/warning| String | -
-| meesage | 必选值，提示信息 | String | -
-| duration | 可选值 | Number | 1500ms
+| v-clock | 直接添加到html标签| - | -
+| v-time | 任意一个合法时间格式 | String | -
 ### demos
 ![demo](https://github.com/Harhao/vill-messgae/blob/master/src/lib/demo.gif)
 ## License
