@@ -1,7 +1,7 @@
 {
   "name": "vill-directive",
-  "version": "1.0.3",
-  "description": "A vue directive v-time about format time",
+  "version": "1.0.4",
+  "description": "A vue directive v-time asbout format time",
   "author": "laternkiwis@aliyun.com",
   "private": false,
   "license": "MIT",

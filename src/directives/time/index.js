@@ -19,5 +19,22 @@ export default {
         delete el.timeout;
       }
     });
+    Vue.directive("down", {
+      bind(el, binding) {
+        const value = binding.value;
+        el.__handle__ = setInterval(() => {
+          if (Time.getDownTime(value).clear) {
+            clearInterval(el.__handle__);
+            el.innerText = Time.getDownTime(value).time;
+            return;
+          }
+          el.innerText = Time.getDownTime(value);
+        }, 1000);
+      },
+      unbind() {
+        clearInterval(el.__timeout__);
+        delete el.__timeout__;
+      }
+    });
   }
 };

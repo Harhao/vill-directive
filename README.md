@@ -26,13 +26,17 @@ Vue.use(time);
     <span v-time="now"></span>
     <h4>v-clock 指令</h4>
     <span v-clock></span>
+    <h4>v-down 指令</h4>
+    <span v-down="time"></span>
   </div>
 </template>
 <script>
 export default {
   name: "Demo",
   data() {
-    return {};
+    return {
+      time: "2019-03-20 13:16:00"
+    };
   },
   computed: {
     now() {
@@ -47,6 +51,7 @@ export default {
 |----- | ----- | ----- | ----- 
 | v-clock | 直接添加到html标签| - | -
 | v-time | 任意一个合法时间格式 | String | -
+| v-down | 任意一个合法时间格式 | String | -
 ### demos
 ![demo](https://github.com/Harhao/vill-directive/blob/master/src/assets/demo.gif)
 ## License
