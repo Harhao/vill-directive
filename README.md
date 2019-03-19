@@ -1,6 +1,6 @@
 # vill-message
 
-> a vue plugins about time directive 
+> a vue plugins about time directive
 
 ## Build Setup
 
@@ -22,30 +22,33 @@ Vue.use(time);
 ```
 <template>
   <div class="demo">
+    <h4>v-time 指令</h4>
     <span v-time="now"></span>
+    <h4>v-clock 指令</h4>
+    <span v-clock></span>
   </div>
 </template>
 <script>
 export default {
-  name: 'Demo',
-  data () {
-    return {
-      
-    }
+  name: "Demo",
+  data() {
+    return {};
   },
-  computed:{
-    now(){
+  computed: {
+    now() {
       return Date.now();
     }
   }
-}
+};
 </script>
 <style scoped></style>
 ```
+
 ```
 
 | 字段 | 说明 | 类型 | 默认值
-|----- | ----- | ----- | ----- 
+|----- | ----- | ----- | -----
 |任意时间 | 必选值 Number/String| String | -
 ## License
 [MIT](http://opensource.org/licenses/MIT)
+```

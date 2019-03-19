@@ -9,6 +9,7 @@ export default {
     const seconds = this.format(date.getSeconds());
     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
   },
+
   format(value) {
     return value > 9 ? value : "0" + value;
   }

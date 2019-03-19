@@ -7,5 +7,17 @@ export default {
         el.innerHTML = Time.getFormatTime(binding.value);
       }
     });
+    Vue.directive("clock", {
+      bind(el, binding) {
+        el.timeout = setInterval(function() {
+          const value = Date.now();
+          el.innerText = Time.getFormatTime(value);
+        }, 1000);
+      },
+      unbind() {
+        clearInterval(el.timeout);
+        delete el.timeout;
+      }
+    });
   }
 };
