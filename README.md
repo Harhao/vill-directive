@@ -49,9 +49,9 @@ export default {
 ```
 | 指令选项 | 说明 | 类型 | 默认值
 |----- | ----- | ----- | ----- 
-| v-clock | 直接添加到html标签| - | -
-| v-time | 任意一个合法时间格式 | String | -
-| v-down | 任意一个合法时间格式 | String | -
+| v-clock | 显示时间钟表| - | -
+| v-time | 显示当前时间 | String | -
+| v-down | 显示输入的时间和当前时间倒计时 | String | -
 ### demos
 ![demo](https://github.com/Harhao/vill-directive/blob/master/src/assets/demo.gif)
 ## License
