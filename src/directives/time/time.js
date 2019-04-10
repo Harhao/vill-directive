@@ -1,5 +1,9 @@
 export default {
   getFormatTime(value) {
+    if (isNaN(value)) {
+      console.error("the value is not a number");
+      return;
+    }
     const date = new Date(value);
     const year = date.getFullYear();
     const month = this.format(date.getMonth() + 1);
