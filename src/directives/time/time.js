@@ -7,7 +7,7 @@ export default {
     const date = new Date(value);
     const year = date.getFullYear();
     const month = this.format(date.getMonth() + 1);
-    const day = this.format(date.getDay());
+    const day = this.format(date.getDate());
     const hours = this.format(date.getHours());
     const minutes = this.format(date.getMinutes());
     const seconds = this.format(date.getSeconds());
